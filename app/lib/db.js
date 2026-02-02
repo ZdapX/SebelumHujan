@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = 'mongodb+srv://dafanation999_db_user:21pOZfo7x5pmJQ4o@cluster0.0digr6d.mongodb.net/chat_app?retryWrites=true&w=majority&appName=Cluster0';
+const MONGODB_URI = 'mongodb+srv://dafanation999_db_user:21pOZfo7x5pmJQ4o@cluster0.0digr6d.mongodb.net/?appName=Cluster0';
 
 if (!MONGODB_URI) {
   throw new Error('Please define the MONGODB_URI environment variable');
