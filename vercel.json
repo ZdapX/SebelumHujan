@@ -3,13 +3,21 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/nextjs"
+      "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
     }
-  ]
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://dafanation999_db_user:21pOZfo7x5pmJQ4o@cluster0.0digr6d.mongodb.net/chat_app?retryWrites=true&w=majority&appName=Cluster0",
+    "JWT_SECRET": "your-secret-key-change-this-in-production"
+  }
 }
