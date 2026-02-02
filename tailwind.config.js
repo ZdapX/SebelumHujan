@@ -21,6 +21,16 @@ module.exports = {
           900: '#1e3a8a',
         },
       },
+      animation: {
+        'slide-in': 'slideIn 0.3s ease-out',
+        'spin-slow': 'spin 2s linear infinite',
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { opacity: 0, transform: 'translateY(10px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],
